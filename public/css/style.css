@@ -2,6 +2,29 @@
   font-family: "kanit";
   src: url("/fonts/kanit-bold.woff") format("woff"), url("/fonts/kanit-bold.woff2") format("woff2"), url("/fonts/kanit-semibold.woff"), format("woff"), url("/fonts/kanit-semibold.woff2"), format("woff2");
 }
+<<<<<<< HEAD
+=======
+@font-face {
+  font-family: "gothic";
+  font-weight: normal;
+  src: url("/fonts/gothic_a1/GothicA1-Medium.ttf");
+}
+@font-face {
+  font-family: "gothic_bold";
+  font-weight: bold;
+  src: url("/fonts/gothic_a1/GothicA1-Bold.ttf");
+}
+@font-face {
+  font-family: "gothic_lighter";
+  font-weight: lighter;
+  src: url("/fonts/gothic_a1/GothicA1-Light.ttf");
+}
+@font-face {
+  font-family: "gothic_regular";
+  font-weight: normal;
+  src: url("/fonts/gothic_a1/GothicA1-Regular.ttf");
+}
+>>>>>>> master
 body {
   background: black;
   color: white;
@@ -48,12 +71,22 @@ nav a {
 }
 
 .logo {
+<<<<<<< HEAD
   font-family: kanit;
   display: flex;
   position: relative;
   flex-direction: column;
   align-items: center;
   padding-top: 25px;
+=======
+  padding-top: 25px;
+  position: relative;
+  left: 24%;
+}
+.logo img {
+  width: 10%;
+  height: 10%;
+>>>>>>> master
 }
 
 .title {
@@ -74,12 +107,99 @@ nav a {
   -webkit-text-stroke-color: white;
 }
 
+<<<<<<< HEAD
+=======
+.white {
+  background-color: white;
+}
+
+>>>>>>> master
 .content label {
   color: black;
   font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   font-size: 18px;
 }
+<<<<<<< HEAD
+=======
+.content .account-form {
+  font-family: gothic_regular;
+  margin: 0px 67px;
+  padding: 60px 15px 86px 15px;
+  background: white;
+}
+.content .account-form h1 {
+  color: #212529;
+  font-size: 35px;
+}
+.content .account-form h2 {
+  color: #212529;
+  font-size: 21px;
+}
+.content .account-form h3 {
+  font-size: 12px;
+  color: #1A1919;
+  text-decoration: underline;
+}
+.content .account-form a {
+  text-decoration: none;
+}
+.content .account-form .row {
+  color: #212529;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.content .account-form .row p {
+  text-align: left;
+  padding: 30px 0px;
+}
+.content .account-form .row form label {
+  font-size: 12px;
+  color: #212529;
+  font-family: gothic;
+}
+.content .account-form .row form label::after {
+  content: "*";
+  color: #e54141;
+}
+.content .account-form .row form input {
+  color: #495057;
+  border: 1px solid black;
+  display: block;
+  background: transparent;
+  width: 400px;
+  height: 46px;
+  padding: 0px 15px;
+  outline: 0;
+}
+.content .account-form .left {
+  width: 20%;
+  display: inline-block;
+  border: 1px solid red;
+  padding: 0px 36px 0px 72px;
+}
+.content .account-form .right {
+  width: 30%;
+  display: inline-block;
+  border: 1px solid blue;
+  padding: 0px 72px 0px 36px;
+}
+.content .account-form .account-btn {
+  padding: 10px 15px;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  border: 0;
+}
+.content .account-form .facebook-btn {
+  color: white;
+  background-color: #3B5998;
+  padding: 10px 15px;
+  font-size: 14px;
+  border: 0;
+}
+>>>>>>> master
 .content .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -111,12 +231,57 @@ nav a {
   font-weight: 400;
 }
 .content .blog h2 {
+<<<<<<< HEAD
   font-weight: 50;
+=======
+>>>>>>> master
   margin: 10px 0 0 0;
   padding-top: 20px;
   font-size: 21px;
   color: black;
   font-family: Arial, Helvetica, sans-serif;
+<<<<<<< HEAD
+=======
+  font-weight: 20;
+}
+.content .blog .blog-article {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  flex-grow: 1;
+  gap: 1rem;
+  color: black;
+  font-family: "gothic";
+  font-weight: 350;
+  font-size: 14px;
+  text-align: left;
+}
+.content .blog .blog-article:first-child {
+  padding: 0px 36px 0px 72px;
+  margin: 32px;
+}
+.content .blog .blog-article:last-child {
+  padding: 0px 72px 0px 36px;
+  margin: 32px;
+}
+
+.newsletter {
+  width: 100%;
+  height: 90px;
+  background-color: #f3f3f3;
+  padding: 30px;
+}
+.newsletter .content {
+  color: #212529;
+}
+.newsletter .content h1 {
+  font-family: gothic_lighter;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.newsletter .content p {
+  font-family: gothic_regular;
+  text-align: left;
+>>>>>>> master
 }
 
 .sidebar {
@@ -136,6 +301,7 @@ nav a {
   color: black;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
+<<<<<<< HEAD
 }
 .sidebar .sidebar-header input {
   color: #495057;
@@ -144,6 +310,22 @@ nav a {
   background: transparent;
   width: 80%;
   padding: 20px 15px;
+=======
+  font-weight: 450;
+}
+.sidebar .sidebar-header input {
+  color: #495057;
+  border: 1px solid black;
+  display: block;
+  background: transparent;
+  width: 90%;
+  padding: 20px 15px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='16' height='16'%3E%3Cpath d='M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z'%3E%3C/path%3E%3C/svg%3E");
+  background-position: 95% 50%;
+  background-repeat: no-repeat;
+  background-size: 8%;
+  outline: 0;
+>>>>>>> master
 }
 .sidebar .sidebar-header span {
   position: absolute;

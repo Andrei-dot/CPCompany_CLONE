@@ -12,6 +12,8 @@ app.set('view engine', 'ejs');
 const index = 'index.ejs';
 const account = 'account.ejs';
 const shop = 'shop.ejs';
+const wishlist = 'wishlist.ejs';
+
 
 app.get('/', (req,res) => {
     res.render(index);
@@ -30,6 +32,13 @@ app.get('/shop', (req,res) => {
     logLoadPage(shop);
     res.end();
 });
+
+app.get('/wishlist', (req,res) => {
+    res.render(wishlist);
+    logLoadPage(wishlist);
+    res.end();
+});
+
 
 app.listen(port, () => {
     console.log(`[👍] Correctly listening on port : ${port}`);

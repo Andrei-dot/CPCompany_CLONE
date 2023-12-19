@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/res/img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <title>C.P Company</title>
+    <title>C.P Company | Liste d'envie</title>
 </head>
 <body>
     <nav id = "main">
@@ -16,11 +15,14 @@
             <a href = "/contact"><li>contacts</li></a>
         </ul>
 
-        
-        <!--
-        <a href = "/">
-            <img src = "res/img/logo.png">
-        </a>-->
+        <div class = "logo">
+            <!--<a href = "/">
+                <!--<strong>C.P.</strong>
+                <span>COMPANY</span>
+
+                <img src = "res/img/logo.png" alt="">
+            </a>-->
+        </div>
 
         <ul>
             <a href = "#" onclick = "openSidebar()" id = "open">
@@ -38,98 +40,41 @@
         </ul>
     </nav>
 
-    <div class = "title">
-        <h1>New Collection</h1>
-        <h1>Metropolis Series</h1>
+    <div class = "content white">
+        <h4 align = "center">Ma Wishlist</h1>
+        <div class = "row">
+            <div class = "col">
+                <h5>Cette liste est vide.</h1>
+            </div>
+        </div>
+        <button class = "default-btn red">Continuez vos achats</button>
     </div>
-
-    <div class = "content">
-        <div class = "gallery" id = "parent-searchbar">
-            <div>
-                <img src="/res/img/1.jpeg" alt="">
-            </div>
-    
-            <div>
-                <img src="/res/img/2.jpeg" alt="">
-            </div>
-    
-            <div>
-                <img src="/res/img/3.jpeg" alt="">
-            </div>    
-        </div>
-
-        <div id = "sidebar" class = "sidebar">
-            <div class = "sidebar-header">
-                <span>
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M12.0007 10.5865L16.9504 5.63672L18.3646 7.05093L13.4149 12.0007L18.3646 16.9504L16.9504 18.3646L12.0007 13.4149L7.05093 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05093 5.63672L12.0007 10.5865Z"></path></svg>
-                    </a>
-                </span>
-                <h1>Rechercher</h1>
-                <form role="search">
-                    <input type = "text" placeholder = "Recherche (mots-clés, etc.)" name = "searchbar">        
-                </form>
-            </div>
-        </div>
-
-        <div class = "blog">
-            <h2 align = "center">about</h2>    
-            <h1 align = "center">C.P. Company</h1>
-
-            <div class = "blog-article">
-                <div class = "right">
-                    <p>
-                        En 1971, Massimo Osti, le styliste révolutionnaire mondialement reconnu comme le « père du sportswear » fonda la marque Chester Perry dont le nom devint C.P. Company en 1978.
-                        La marque fut immédiatement acclamée grâce à son interprétation subtilement non-conformiste des classiques fonctionnels du vestiaire masculin. 
-                        Pendant plus de 45 ans, la marque n’a eu de cesse que de renouveler son emblématique mélange de modèles sportswear et professionnels ainsi que de pièces militaires d’archives en les associant à des tissus italiens novateurs, d’avant-garde et extrêmement sophistiqués. 
-                        Ses tissus innovants ont aussi été renforcés par l’utilisation de la teinture en pièce, une technique 
-                    </p>
-                </div>
-
-                <div class = "left">
-                    <p>
-                        que C.P. Company a été la première marque au monde à développer dès la moitié des années 1970. Des vêtements entièrement finis réalisés à partir de plusieurs tissus et fibres sont teints à la fin du procédé de fabrication ce qui permet d’obtenir une pièce à la finesse ton sur ton et haute en couleur. 
-                        C.P. Company est facile à porter et vous donne l’impression que vous avez toujours eu ce vêtement dès le premier jour que vous l’avez essayé. 
-                        Le label se distingue aussi par la richesse de ses détails alliant tradition, innovation et performance.
-                    </p>
-                </div>    
-            </div>
-        </div>
-
-        <div class = "livestory">
-            <h1 align = center>Shop the stories</h1>
-            
-            <div class = "carousel">
-                <div class = "slide">
-                    <img src="res/img/carousel/1.png" alt="">
-                </div>
-
-                <div class = "slide">
-                    <img src="res/img/carousel/2.png" alt="">
-                </div>
-
-                <div class = "slide">
-                    <img src="res/img/carousel/3.png" alt="">
-                </div>
-
-                <div class = "slide">
-                    <img src="res/img/carousel/4.png" alt="">
-                </div>
-            </div>
+    <div id = "sidebar" class = "sidebar">
+        <div class = "sidebar-header">
+            <span>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M12.0007 10.5865L16.9504 5.63672L18.3646 7.05093L13.4149 12.0007L18.3646 16.9504L16.9504 18.3646L12.0007 13.4149L7.05093 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05093 5.63672L12.0007 10.5865Z"></path></svg>
+                </a>
+            </span>
+            <h1>Rechercher</h1>
+            <form role="search">
+                <input type = "text" placeholder = "Recherche (mots-clés, etc.)" name = "searchbar">        
+            </form>
         </div>
     </div>
 
-    <script src="/js/searchBar.js"></script>
     <script src="/js/sidebar.js"></script>
-   <!--<script src="/js/carousel.js"></script>-->
+    <script src="/js/formValidity.js"></script>
+
     <section class = "newsletter">
         <div class = "content">
             <h1>inscrivez vous à la newsletter</h1>
-                <p>
-                    <strong>Obtenez immédiatement 10% de remise</strong> sur votre premier achat, valable pour toute la collection. Les produits soldé et le couleurs personnalisées sont exclus.
-                </p>
+            <p>
+                <strong>Obtenez immédiatement 10% de remise</strong> sur votre premier achat, valable pour toute la collection. Les produits soldé et le couleurs personnalisées sont exclus.
+            </p>
         </div>
     </section>
+
     <footer>
         <div class = "section">
             <h2>Livraison à : FR / FR</h2>

@@ -35,7 +35,6 @@
 body {
     background: black;
     color: white;
-    font-family: 'kanit', sans-serif;
     padding: 0;
     margin: 0;
     overflow-x: hidden;
@@ -370,6 +369,8 @@ nav {
 }
 
 .content {
+    font-family: gothic_lighter;
+
     label {
         color: black;
         font-family: Arial, Helvetica, sans-serif;
@@ -377,6 +378,74 @@ nav {
         font-size: 18px;
     }
 
+    h4 {
+        color: #212529;
+        font-size: 35px;
+        padding-top: 60px;
+        font-family: inherit;
+    }
+
+    h5 {
+        color: #212529;
+        font-size: 21px;
+        font-family: inherit;
+    }
+
+    .row {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        .col {
+            h1 {
+                margin: 0;
+                padding: 0;
+                font-size: 21px;
+                font-family: inherit;
+                color: #212529;
+            }
+
+            color: #212529;
+            border-top: 1px solid #1a1919;
+            border-bottom: 1px solid #1a1919;    
+
+            margin: 40px 0px 90px;
+            padding: 49px 0px 41px;
+        }
+    }
+
+    .default-btn {
+        padding: 10px 15px;
+        background-color: black;
+        color: white;
+        font-size: 14px;
+        border: 0;
+        width: 415px;
+        height: 40px;         
+        .red {
+            color: red;
+        }
+    }
+
+    .account-btn {
+        padding: 10px 15px;
+        background-color: black;
+        color: white;
+        font-size: 14px;
+        border: 0;
+        width: 415px;
+        height: 40px;
+    }
+
+    .facebook-btn {
+        color: white;
+        background-color: #3B5998;
+        padding: 10px 15px;
+        font-size: 14px;
+        border: 0;
+        width: 410px;
+        height: 40px;
+    }
     .account-form {
         font-family: gothic_lighter;
         margin: 0px 67px;
@@ -493,26 +562,6 @@ nav {
                 //border: 1px solid blue;
                 padding: 0px 72px 0px 36px;
             }
-            
-            .account-btn {
-                padding: 10px 15px;
-                background-color: black;
-                color: white;
-                font-size: 14px;
-                border: 0;
-                width: 415px;
-                height: 40px;
-            }
-
-            .facebook-btn {
-                color: white;
-                background-color: #3B5998;
-                padding: 10px 15px;
-                font-size: 14px;
-                border: 0;
-                width: 410px;
-                height: 40px;
-            }
         }
     }
 
@@ -533,55 +582,84 @@ nav {
     }
 
     .blog {
-        .blog-title{
-            text-align: center;
-        }
         width: 100%;
         height: fit-content;
         background: white;
-
+        color: #212529;
+        font-style: gothic_regular;
+        
         h1 {
             margin: 0;
             padding: 0;
             font-size: 52px;
-            color: black;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: 400;
         }
+
         h2 {
             margin: 10px 0 0 0; 
             padding-top: 20px;
             font-size: 21px;
-            color: black;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: 20;
+            font-style: gothic_lighter;
         }
 
         .blog-article {
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            flex-grow: 1;
-            gap: 1rem;
-            color: black;
+            width: 100%;
+            color: #212529;
+            display: flex;
+            justify-content: center;
 
-            font-family: 'gothic';
-            font-weight: 350;
-            font-size: 14px;
-
-            text-align: left;
-
-            &:first-child {
-                padding: 0px 36px 0px 72px;
-                margin: 32px;
+            p {
+                font-style: inherit;
+                font-size: 14px;
             }
 
-            &:last-child {
+            .left {
+                width: 30%;
+                display: inline-block;
+                border: 1px solid red;
+                padding: 0px 36px 0px 72px;
+                margin: 32px 0px;
+            }
+
+            .right {
+                width: 30%;
+                display: inline-block;
+                border: 1px solid blue;
                 padding: 0px 72px 0px 36px;
-                margin: 32px;
+                margin: 32px 0px;
+            }    
+        }
+    }
+}
+
+.livestory {
+    width: 100%;
+    padding: 60px 30px;
+    background-color: white;
+
+    h1 {
+        font-size: 21px;
+        font-style: gothic_regular;
+        color: #212529;
+    }
+
+    .carousel {
+        
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        flex-grow: 1;
+        
+        .slide {
+            //display: none;
+            img {
+                height: 320px;
+                width: 320px;    
             }
         }
     }
-
 }
 
 .newsletter {

@@ -25,7 +25,6 @@
 body {
   background: black;
   color: white;
-  font-family: "kanit", sans-serif;
   padding: 0;
   margin: 0;
   overflow-x: hidden;
@@ -325,11 +324,74 @@ nav a {
   background-color: white;
 }
 
+.content {
+  font-family: gothic_lighter;
+}
 .content label {
   color: black;
   font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   font-size: 18px;
+}
+.content h4 {
+  color: #212529;
+  font-size: 35px;
+  padding-top: 60px;
+  font-family: inherit;
+}
+.content h5 {
+  color: #212529;
+  font-size: 21px;
+  font-family: inherit;
+}
+.content .row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.content .row .col {
+  color: #212529;
+  border-top: 1px solid #1a1919;
+  border-bottom: 1px solid #1a1919;
+  margin: 40px 0px 90px;
+  padding: 49px 0px 41px;
+}
+.content .row .col h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 21px;
+  font-family: inherit;
+  color: #212529;
+}
+.content .default-btn {
+  padding: 10px 15px;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  border: 0;
+  width: 415px;
+  height: 40px;
+}
+.content .default-btn .red {
+  color: red;
+}
+.content .account-btn {
+  padding: 10px 15px;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  border: 0;
+  width: 415px;
+  height: 40px;
+}
+.content .facebook-btn {
+  color: white;
+  background-color: #3B5998;
+  padding: 10px 15px;
+  font-size: 14px;
+  border: 0;
+  width: 410px;
+  height: 40px;
 }
 .content .account-form {
   font-family: gothic_lighter;
@@ -433,24 +495,6 @@ nav a {
   display: inline-block;
   padding: 0px 72px 0px 36px;
 }
-.content .account-form .row .account-btn {
-  padding: 10px 15px;
-  background-color: black;
-  color: white;
-  font-size: 14px;
-  border: 0;
-  width: 415px;
-  height: 40px;
-}
-.content .account-form .row .facebook-btn {
-  color: white;
-  background-color: #3B5998;
-  padding: 10px 15px;
-  font-size: 14px;
-  border: 0;
-  width: 410px;
-  height: 40px;
-}
 .content .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -469,44 +513,66 @@ nav a {
   height: -moz-fit-content;
   height: fit-content;
   background: white;
-}
-.content .blog .blog-title {
-  text-align: center;
+  color: #212529;
+  font-style: gothic_regular;
 }
 .content .blog h1 {
   margin: 0;
   padding: 0;
   font-size: 52px;
-  color: black;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
 }
 .content .blog h2 {
   margin: 10px 0 0 0;
   padding-top: 20px;
   font-size: 21px;
-  color: black;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 20;
+  font-style: gothic_lighter;
 }
 .content .blog .blog-article {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  flex-grow: 1;
-  gap: 1rem;
-  color: black;
-  font-family: "gothic";
-  font-weight: 350;
+  width: 100%;
+  color: #212529;
+  display: flex;
+  justify-content: center;
+}
+.content .blog .blog-article p {
+  font-style: inherit;
   font-size: 14px;
-  text-align: left;
 }
-.content .blog .blog-article:first-child {
+.content .blog .blog-article .left {
+  width: 30%;
+  display: inline-block;
+  border: 1px solid red;
   padding: 0px 36px 0px 72px;
-  margin: 32px;
+  margin: 32px 0px;
 }
-.content .blog .blog-article:last-child {
+.content .blog .blog-article .right {
+  width: 30%;
+  display: inline-block;
+  border: 1px solid blue;
   padding: 0px 72px 0px 36px;
-  margin: 32px;
+  margin: 32px 0px;
+}
+
+.livestory {
+  width: 100%;
+  padding: 60px 30px;
+  background-color: white;
+}
+.livestory h1 {
+  font-size: 21px;
+  font-style: gothic_regular;
+  color: #212529;
+}
+.livestory .carousel {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  flex-grow: 1;
+}
+.livestory .carousel .slide img {
+  height: 320px;
+  width: 320px;
 }
 
 .newsletter {

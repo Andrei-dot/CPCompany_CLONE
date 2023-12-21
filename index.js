@@ -38,6 +38,31 @@ app.get('/register', (req,res) => {
     logLoadPage(register);
     res.end();
 });
+
+/* app.post('/register', urlEncoder, function(req,res) {
+    const data = req.body;
+    con.connect(function(err) {
+        if(err) throw err;
+        console.log("[!] Connection établie avec DDB.")
+
+            if(data.mail == data.mailConfirm) {
+                if(data.password == data.passwordConfirm) {
+                    var query = con.query(`INSERT INTO users(userId,username,mail,mailConfirm,password,passwordConfirm) VALUES ('0',' ` + data.username + `','` + data.mail + `','` + data.mailConfirm + `','` + data.pwd + `','` + data.pwdConfirm + `');`, function(err,rows) {
+                        if(err) { console.error(err); }
+                    });            
+                } else {
+                    res.statusMessage = "Current password does not match";
+                    res.status(400).end();        
+                }
+            } else {
+                console.log("Mail!");
+            }
+    });
+    res.render("index.ejs");
+    res.end();
+}); */
+
+
 app.get('/wishlist', (req,res) => {
     res.render(wishlist);
     logLoadPage(wishlist);

@@ -13,7 +13,7 @@ const index = 'index.ejs';
 const account = 'account.ejs';
 const shop = 'shop.ejs';
 const wishlist = 'wishlist.ejs';
-
+const register = 'register.ejs';
 
 app.get('/', (req,res) => {
     res.render(index);
@@ -33,6 +33,11 @@ app.get('/shop', (req,res) => {
     res.end();
 });
 
+app.get('/register', (req,res) => {
+    res.render(register);
+    logLoadPage(register);
+    res.end();
+});
 app.get('/wishlist', (req,res) => {
     res.render(wishlist);
     logLoadPage(wishlist);

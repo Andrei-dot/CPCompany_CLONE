@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>C.P Company | Account</title>
+    <title>C.P Company | S'enregistrer</title>
 </head>
 <body>
     <nav id = "main">
@@ -40,76 +40,67 @@
         </ul>
     </nav>
 
-
     <div class = "content white">
-        <div class = "account-form">
-            <h1 align = "center">Identifiez-vous ou créez un compte</h1>
-            <div class = "row">
-                <div class = "left">
-                    <h2>Nouveaux clients</h2>
-                    <p>
-                        Cet enregistrement vous permettra de réaliser des achats plus rapidement, de mémoriser plusieurs adresses de livraison, de suivre vos achats en temps réel et d'exécuter beaucoup d'autres fonctions.
-                    </p>
-
-                    <a href = "/register">
-                        <button class = "account-btn">Créez un compte</button>
-                    </a>
-
-                    <p>
-                        Si vous possédez un compte Facebook, vous pouvez utiliser les données de votre profil pour vous abonner.
-                    </p>
-
-                    <a href = "/">
-                        <button class = "facebook-btn">Connexion avec Facebook</button>
-                    </a>
-                </div>
-                <div class = "vertical-separator"></div>
-                <div class = "right">
-                    <h2>Clients enregistrés</h2>
-
-                    <form name = "formAccount">
-                        <label for = "username">Adresse EMAIL</label>
-                        <input type = "text" name = "username" id = "username" required><br>
-                        <label for = "password">Mot de passe</label>
-                        <input type = "password" name = "password" id = "password" required>
-
-                        <a href = "/">
-                            <h3>Mot de passe oublié?</h3>
-                        </a>
-
-                        <div class = "container-checkbox">
-                            <label for = "remember">Se souvenir de moi</label>
-                            <input type = "checkbox" name = "remember" id = "remember">    
+        <div class = "register-page">
+            <div class = "offset-md-2 col-md-8 col-12">
+                <h1 align = "center">Créer un compte</h1>
+                <div class = "row">
+                    <div class = "facebook-wrapper">
+                        <div class = "description">
+                                Si vous possédez un compte Facebook, vous pouvez utiliser les données de votre profil pour vous abonner. 
                         </div>
-                        <button class = "account-btn" id = "loginButton" onclick = "login()">Se connecter</button>
-                    </form>                
+                        <div class = "button-box">
+                            <a href = "/">
+                                <button class = "facebook-btn" style =  "width: 270px;">Connexion avec Facebook</button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
+    
+                <form id = "registration-form" action = "/register" method = "POST" class = "registration">
+                    <div class = "row">
+                        <div class = "section-title">
+                            <h1>Informations personnelles</h1>
+                            <h2>Remplir les champs ci-dessous en écrivant exclusivement en caractères latins (A-Z)</h2>
+                        </div>
+                        <label for = "title">Titre</label>
+                        <select id = "title" class = "">
+                            <option value></option>
+                            <option value = "mr"> M. </option>
+                            <option value = "mrs"> Mlle </option>
+                        </select>
+                    </div>
+
+                    <div class = "row">
+                        <label for = "registration-fname">Prénom</label>
+                        <input type = "text" class = "form-control" id = "registration-fname">
+
+                        <label for = "registration-lname">Nom</label>
+                        <input type = "text" class = "form-control" id = "registration-lname">
+                    </div>
+
+                    <div class = "row">
+                        <label for = "registration-email">Adresse email</label>
+                        <input type = "text" class = "form-control" id = "registration-email">
+
+                        <label for = "registration-email-confirmation">Confirmer l'email</label>
+                        <input type = "text" class = "form-control" id = "registration-email-confirmation">
+                    </div>
+
+                    <div class = "row">
+                        <label for = "registration-phone">Téléphone</label>
+                        <input type = "text" class = "form-control" id = "registration-phone">
+
+                        <label for = "registration-phone-mobile">Téléphone portable</label>
+                        <input type = "text" class = "form-control" id = "registration-phone-mobile">
+
+                        <label for = "registration-birthdate">Date de naissance</label>
+                        <input type = "text" class = "form-control" id = "registration-birthdate">
+                    </div>
+                </form>
             </div>
         </div>
     </div>
-
-    <div id = "sidebar" class = "sidebar">
-        <div class = "sidebar-header">
-            <span>
-                <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M12.0007 10.5865L16.9504 5.63672L18.3646 7.05093L13.4149 12.0007L18.3646 16.9504L16.9504 18.3646L12.0007 13.4149L7.05093 18.3646L5.63672 16.9504L10.5865 12.0007L5.63672 7.05093L7.05093 5.63672L12.0007 10.5865Z"></path></svg>
-                </a>
-            </span>
-            <h1>Rechercher</h1>
-            <form role="search">
-                <input type = "text" placeholder = "Recherche (mots-clés, etc.)" name = "searchbar">        
-            </form>
-        </div>
-    </div>
-
-    <section class = "newsletter">
-        <div class = "content">
-            <h1>inscrivez vous à la newsletter</h1>
-            <p>
-                <strong>Obtenez immédiatement 10% de remise</strong> sur votre premier achat, valable pour toute la collection. Les produits soldé et le couleurs personnalisées sont exclus.
-            </p>
-        </div>
-    </section>
 
     <script src="/js/sidebar.js"></script>
     <script src="/js/formValidity.js"></script>
